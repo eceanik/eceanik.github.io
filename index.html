@@ -33,11 +33,12 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ProfResponsibilities">Professional Responsibilities</a></li>
                 </ul>
-			</div>
+			</div>            
 			<div class="social-icons">
-						<a class="social-icon" href="https://www.researchgate.net/profile/Anik_Samanta"><i class="fab fa-researchgate" style='font-size:24px; color:cyan'></i></a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/anik-kumar-samanta-4a5a2520/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/eceanik"><i class="fab fa-github"></i></a>
+						<a class="social-icon" href="https://www.researchgate.net/profile/Anik_Samanta" target="_blank"><i class="fab fa-researchgate" style='font-size:1em; color:cyan'></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/anik-kumar-samanta-4a5a2520/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/eceanik" target="_blank"><i class="fab fa-github" ></i></a>
+                        <a class="social-icon" href="https://scholar.google.co.in/citations?user=Hha-YbkAAAAJ&hl=en" target="_blank"><img src="assets/img/gScholar.png" alt="Google Scholar" style="height:15px"></a>
             </div>
             
         </nav>
@@ -46,50 +47,60 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
+                    <h2 class="mb-0">
                         Anik Kumar
                         <span class="text-primary">Samanta</span>
-                    </h1>
-                    <div class="subheading mb-5">
+                    </h2>
+                    <div class="subheadingHeaderTop mb-3">
                         Ph.D. Candidate, Indian Institute of Technology Kharagpur, West Bengal- 721305
                         <a href="mailto:anik.samanta@iitkgp.ac.in">anik.samanta@iitkgp.ac.in</a>
                     </div>
-                    <p class="lead mb-5" style="text-align:justify">I'm pursuing doctoral degree in signal processing under the supervision of Prof. Aurobinda Routray (Electrical Engineering) and Prof. Swanand R. Khare (Mathematics) at IIT Kharagpur. I have worked on high-resolution spectral estimation, signal-based fault diagnosis of induction motors, detection theory, detection and estimation of parameters under non-stationary conditions, and embedded signal processing. My resume can be downloaded in PDF format from <a href="assets\doc\Anik Kumar Samanta_CV.pdf">here.</a></p>
+                    <p class="lead mb-3" style="text-align:justify">I'm pursuing doctoral degree in signal processing under the supervision of Prof. Aurobinda Routray (Electrical Engineering) and Prof. Swanand R. Khare (Mathematics) at IIT Kharagpur. I have worked on high-resolution spectral estimation, signal-based fault diagnosis of induction motors, detection theory, detection and estimation of parameters under non-stationary conditions, and embedded signal processing. My resume can be downloaded in PDF format from <a href="assets\doc\Anik Kumar Samanta_CV.pdf">here.</a></p>
                 </div>
             
 			</section>
             <hr class="m-0" />
             <!-- Projects-->
             <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects Undertaken</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
+                <div class="resume-section-content mt-3">
+                    <h2 class="mb-3">Projects Undertaken</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                        <div class="flex-grow-1"> 
 							<h3 class="mb-0">Major Assignments</h3>
-                            <div class="subheading mb-3">Estimating Instantaneous Frequency of Multiple Components Simultaneously</div>
-							<p style="text-align:justify"> In this work, we propose a generalized framework for real-time tracking of multiple time-varying sinusoidal frequencies of a non-stationary signal. The non-stationary signal is modeled as a time-varying autoregressive (TVAR) process. A non-linear state-space model is formed to truly represent the TVAR process, considering the frequencies as state variables.<span id="dots">..</span><span id="more"> We have defined the observation and its Jacobian by the modified roots of a polynomial formed by the state variables. Numerical derivatives have been substituted by the analytic form of the Jacobian matrix for improved numerical accuracy. A constrained Kalman filter is then applied for real-time tracking of the frequencies. We have compared the statistical performance of the proposed method with four other established methods using Monte-Carlo simulations. The proposed method is found to have superior error performance under different conditions of chirp-rate, resolution, noise variance, and abrupt changes in frequency. Additionally, we have taken the bat echolocation signal, gravitational waves of a binary black hole merger, and supply frequency of a three-phase squirrel cage induction motor as practical examples to demonstrate the applicability and efficacy of the proposed method in real-world scenarios.</span></p>
-							<button onclick="expandText()" id="myBtn">Read more</button>						
+						</div>
+					</div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                        <div class="flex-grow-1" expandtag="extendEkf">						
+                            <div class="subheading subheadingCapitalize mb-3">Estimating Instantaneous Frequency of Multiple Components Simultaneously</div>
+							<p style="text-align:justify" > In this work, we propose a generalized framework for real-time tracking of multiple time-varying sinusoidal frequencies of a non-stationary signal. The non-stationary signal is modeled as a time-varying autoregressive (TVAR) process. A non-linear state-space model is formed to truly represent the TVAR process, considering the frequencies as state variables.<span id="extendEkf" class="readMoretxt"> We have defined the observation and its Jacobian by the modified roots of a polynomial formed by the state variables. Numerical derivatives have been substituted by the analytic form of the Jacobian matrix for improved numerical accuracy. A constrained Kalman filter is then applied for real-time tracking of the frequencies. We have compared the statistical performance of the proposed method with four other established methods using Monte-Carlo simulations. The proposed method is found to have superior error performance under different conditions of chirp-rate, resolution, noise variance, and abrupt changes in frequency. Additionally, we have taken the bat echolocation signal, gravitational waves of a binary black hole merger, and supply frequency of a three-phase squirrel cage induction motor as practical examples to demonstrate the applicability and efficacy of the proposed method in real-world scenarios.</span></p>
+							<button onclick="readMore('extendEkf')" id="extendEkfReadMore" class="readbtnStyle">Read more</button>	
+                            <button onclick="readLess('extendEkf')" id="extendEkfReadLess" class="readbtnStyle readLessBtn">Read less</button>						
                         </div>
                         <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>-->
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                        <div class="flex-grow-1" expandtag="extendMinDist">
                             <div class="subheading mb-3">Minimum Distance-based Hypothesis Testing For Insipient Fault Detection</div>
 							<img src="assets/img/blockDiag_MinimumDistance.png" alt="Block diagram" style="width:484px;height:117px;">
-                            <p>[Details awaited].</p>
+                            <p style="text-align:justify">  We propose a single vibration sensor-based method for detecting incipient faults in squirrel cage induction motors (SCIM). We consider defects in different parts of the bearing (inner raceway, outer raceway, cage train, and rolling element) as well as in a single bar of the rotor. The vibration signal is dominated by the fundamental rotational frequency and its harmonics. The dominant components result in numerical errors while estimating the relatively indistinct fault-specific spectral components.<span id="extendMinDist" class="readMoretxt"> We precondition the vibration signal by suppressing multiple dominant components using an extended Kalman filter-based method. The suppression of the dominant components reduces the spectral leakage, exposes minute fault components, and improves the overall amplitude estimation. Subsequently, we estimate the fault frequency and amplitude using an accurate and low-complexity Rayleigh-quotient based spectral estimator. The thresholds for fault detection are determined from a small number of healthy data, and an adaptive minimum distance-based detector is used for hypothesis testing. The proposed test improves detection and reduces false alarm under noisy conditions. We test the complete algorithm using data from a 22-kW SCIM lab-setup. The proposed method has achieved 100% accuracy with the publicly available 12 kHz drive-end bearing data from Case Western Reserve University.</span></p>
+							<button onclick="readMore('extendMinDist')" id="extendMinDistReadMore" class="readbtnStyle">Read more</button>
+                            <button onclick="readLess('extendMinDist')" id="extendMinDistReadLess" class="readbtnStyle readLessBtn">Read less</button>
+							
                         </div>
                         <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>-->
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1">
                             <div class="subheading mb-3">High-resolution Rayleigh Quotient Based Spectral Estimator</div>
 							<img src="assets/img/locationError_SNRdb_window_v2.jpg" alt="MSE_snr" style="width:256px;height:192px;">
 							<img src="assets/img/locationError_xCorrDB_crlb_windowed_v2.jpg" alt="MSE_datalength" style="width:256px;height:192px;">
-                            <p>[Details awaited].</p>
+                            <p id="rayleigh" class="readMoretxt">[Details awaited].</p>
+                            <button onclick="readMore('rayleigh')" id="rayleighReadMore" class="readbtnStyle">Read more</button>
+                            <button onclick="readLess('rayleigh')" id="rayleighReadLess" class="readbtnStyle readLessBtn">Read less</button>
                         </div>
                         <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>-->
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1">
                             <div class="subheading mb-3">Real-time Simulation of Squirrel Cage Induction Motor Faults</div>
 							<img src="assets/img/simulator.jpg" alt="SCIM Fault Simulator" style="width:271px;height:185px;" >							
@@ -97,7 +108,7 @@
                         </div>
                         <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>-->
                     </div>
-					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+					<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1">
                             <div class="subheading mb-3">Online Embedded System for Detecting Squirrel Cage Induction Motor Faults</div>
 							<img src="assets/img/embeddedSystem.jpg" alt="Embedded System Progression" style="width:458px;height:217px;">							
@@ -116,14 +127,13 @@
                         </div>
                         <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>-->
                     </div>					
-                </div>
             </section>
 			
             <hr class="m-0" />
             <!-- publications-->
             <section class="resume-section" id="publications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
+                    <h2 class="mb-3 mt-3">Publications</h2>
 					<div class="subheading mb-3">Patents Filed</div>
 					<ol>
 					<li> A. Routray, A. Naha, A. K. Samanta, Amey Pawar, Chandrasekhar Sakpal, “A system for assessment of multiple faults in induction motors”, WO2019167086A1, 2019 <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019167086">[link]</a>. </li>
@@ -151,7 +161,7 @@
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
+                    <h2 class="mb-3 mt-3">Education</h2>
 					                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Indian Institute of Technology Kharagpur</h3>
@@ -203,7 +213,7 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
+                    <h2 class="mb-3 mt-3">Skills</h2>
                     <!-- <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-matlab"></i></li>
@@ -247,9 +257,9 @@
 
             <hr class="m-0" />
             <!-- Interests-->
-            <section class="resume-section" id="interests">
+            <section class="resume-section interest-section" id="interests">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
+                    <h2 class="mb-3 mt-3">Interests</h2>
                     <p style="text-align:justify">Outside the regular rigor of my Ph.D., I love to swim. Due to the recent lockdown situation, I started cycling. Currently, I ride 30 KMs on an average daily. Apart from these, I am an amaeteur chef, have been trying my hand on biriyani for some time now. I like to take pictures, and birds have been an interesting subject for me for quite some time.</p>
                     <p class="mb-0"> My indoor activities include reading novels and watching movies. </p>
                 </div>
@@ -260,7 +270,7 @@
             <!-- ProfessionResponsibilities-->
             <section class="resume-section" id="ProfResponsibilities">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Professional Responsibilities</h2>
+                    <h2 class="mb-3 mt-3">Professional Responsibilities</h2>
 					<ol>
                     <li>Chair of of IEEE Signal Processing Society Student Branch, IIT Kharagpur (2017-2019).</li>
                     <li>Founding Secretary cum Treasurer of IEEE Signal Processing Society Student Branch, IIT Kharagpur (2015-2017).</li>
@@ -279,6 +289,9 @@
 					</ol>
                 </div>			
             </section>
+            <footer>
+            <div class="footer bg-primary">Site Maintained By : Anik Kr Samanta</div>
+            </footer>
 			
         <hr class="m-0" />
         </div>

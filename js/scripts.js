@@ -42,7 +42,7 @@
 })(jQuery); // End of use strict
 
 // Function to expand text (AKS)
-function expandText() {
+/* function expandText(expandTagInput) {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
@@ -56,4 +56,31 @@ function expandText() {
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
   }
+} */
+
+// Function to expand text (AKS) for Multiple readmore buttons
+/*function readMore(inputTag) {
+    let dots = document.querySelector(`.flex-grow-1[expandTag="${inputTag}"] .dots`);
+    let moreText = document.querySelector(`.flex-grow-1[expandTag="${inputTag}"] .more`); 
+    let btnText = document.querySelector(`.flex-grow-1[expandTag="${inputTag}"] .myBtn`);
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}*/
+function readMore(inputTag) {
+    $("#"+inputTag).toggle();
+    $("#"+inputTag+"ReadLess").show();
+    $("#"+inputTag+"ReadMore").hide();
+}
+function readLess(inputTag) {
+    $("#"+inputTag).toggle();
+     $("#"+inputTag+"ReadMore").show();
+    $("#"+inputTag+"ReadLess").hide();
 }

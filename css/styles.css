@@ -10035,6 +10035,13 @@ p.lead {
   font-weight: 500;
   font-size: 1.5rem;
 }
+.subheadingHeaderTop{
+font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.subheadingHeaderTop a{ text-transform:none;}
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
@@ -10088,19 +10095,19 @@ p.lead {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   background-color: #495057;
   color: #fff;
   border-radius: 100%;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
+  font-size: 1rem;
+  margin-right: 1rem;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: grey;
 }
 
 .dev-icons {
@@ -10122,16 +10129,22 @@ section.resume-section .resume-section-content {
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: 55vh;
   }
+  section.resume-section.interest-section{ min-height: 35vh;}
 }
 @media (min-width: 992px) {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }
 }
-
+.readMoretxt{display:none;}
+.readbtnStyle{border:0px; color:#bd5d38;background:transparent;}
+.readbtnStyle:hover{text-decoration:underline;}
+.readLessBtn{display:none;}
 #more {display: none;}
+.subheading.subheadingCapitalize{text-transform:capitalize;}
+.footer{font-size:10px;color:#fff; text-align:center;padding2px 0;}
