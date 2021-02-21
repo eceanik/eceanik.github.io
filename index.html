@@ -30,8 +30,9 @@
 					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>					
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ProfResponsibilities">Professional Responsibilities</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+
                 </ul>
 			</div>            
 			<div class="social-icons">
@@ -80,7 +81,7 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1" expandtag="extendMinDist">
-                            <div class="subheading mb-3">Minimum Distance-based Hypothesis Testing For Insipient Fault Detection</div>
+                            <div class="subheading subheadingCapitalize mb-3">Minimum Distance-based Hypothesis Testing For Insipient Fault Detection</div>
 							<img src="assets/img/blockDiag_MinimumDistance.png" alt="Block diagram" style="width:484px;height:117px;">
                             <p style="text-align:justify">  We propose a single vibration sensor-based method for detecting incipient faults in squirrel cage induction motors (SCIM). We consider defects in different parts of the bearing (inner raceway, outer raceway, cage train, and rolling element) as well as in a single bar of the rotor. The vibration signal is dominated by the fundamental rotational frequency and its harmonics. The dominant components result in numerical errors while estimating the relatively indistinct fault-specific spectral components.<span id="extendMinDist" class="readMoretxt"> We precondition the vibration signal by suppressing multiple dominant components using an extended Kalman filter-based method. The suppression of the dominant components reduces the spectral leakage, exposes minute fault components, and improves the overall amplitude estimation. Subsequently, we estimate the fault frequency and amplitude using an accurate and low-complexity Rayleigh-quotient based spectral estimator. The thresholds for fault detection are determined from a small number of healthy data, and an adaptive minimum distance-based detector is used for hypothesis testing. The proposed test improves detection and reduces false alarm under noisy conditions. We test the complete algorithm using data from a 22-kW SCIM lab-setup. The proposed method has achieved 100% accuracy with the publicly available 12 kHz drive-end bearing data from Case Western Reserve University.</span></p>
 							<button onclick="readMore('extendMinDist')" id="extendMinDistReadMore" class="readbtnStyle">Read more</button>
@@ -91,10 +92,11 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1">
-                            <div class="subheading mb-3">High-resolution Rayleigh Quotient Based Spectral Estimator</div>
+                            <div class="subheading subheadingCapitalize mb-3">High-resolution Rayleigh Quotient Based Spectral Estimator</div>
+                            <p style="text-align:justify" > The eigenvalue of a symmetric matrix with known eigenvector can be approximated by using the theory of Rayleigh quotients. the eigenvalues of the autocorrelation matrix corresponding to the signal eigenvectors obtained from the Rayleigh quotients can give vital information about the sinusoidal amplitude present. The mean square error (MSE) between the input sinusoidal frequency and the location of the peak obtained from the respective spectral estimator is evaluated by multiple montecarlo simulations. It is inferred that MUSIC and the proposed spectral estimator have slightly higher accuracy for similar data length when compared to DFT. <span id="rayleigh" class="readMoretxt"> It is found that the performance of the proposed spectral estimator in a noisy environment is quite robust and is equivalent to that of MUSIC and is quite better than DFT. Unlike MUSIC, the Rayleigh-quotient spectrum can estimate the amplitude of constituent frequency components and is also faster than MUSIC, without requiring any information about the model order.                        
 							<img src="assets/img/locationError_SNRdb_window_v2.jpg" alt="MSE_snr" style="width:256px;height:192px;">
-							<img src="assets/img/locationError_xCorrDB_crlb_windowed_v2.jpg" alt="MSE_datalength" style="width:256px;height:192px;">
-                            <p id="rayleigh" class="readMoretxt">[Details awaited].</p>
+							<img src="assets/img/locationError_xCorrDB_crlb_windowed_v2.jpg" alt="MSE_datalength" style="width:256px;height:192px;">                            
+                            </p>
                             <button onclick="readMore('rayleigh')" id="rayleighReadMore" class="readbtnStyle">Read more</button>
                             <button onclick="readLess('rayleigh')" id="rayleighReadLess" class="readbtnStyle readLessBtn">Read less</button>
                         </div>
@@ -102,7 +104,7 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1">
-                            <div class="subheading mb-3">Real-time Simulation of Squirrel Cage Induction Motor Faults</div>
+                            <div class="subheading subheadingCapitalize mb-3">Real-time Simulation of Squirrel Cage Induction Motor Faults</div>
 							<img src="assets/img/simulator.jpg" alt="SCIM Fault Simulator" style="width:271px;height:185px;" >							
 
                         </div>
@@ -110,7 +112,7 @@
                     </div>
 					<div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1">
-                            <div class="subheading mb-3">Online Embedded System for Detecting Squirrel Cage Induction Motor Faults</div>
+                            <div class="subheading subheadingCapitalize mb-3">Online Embedded System for Detecting Squirrel Cage Induction Motor Faults</div>
 							<img src="assets/img/embeddedSystem.jpg" alt="Embedded System Progression" style="width:458px;height:217px;">							
                             <p>[Details awaited].</p>
                         </div>
@@ -119,10 +121,10 @@
 					<h3 class="mb-0">Collaborative Assignments</h3>
 					<div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <div class="subheading mb-3">Adaptive Virtual Inertia-based Frequency Regulation in Wind Power Systems.</div>						
-                            <div class="subheading mb-3">Online Realtime System for Detecting Arc Faults in Low-Voltage Distribution Systems.</div>
-                            <div class="subheading mb-3">Physics-based Modeling of Gravitational Waves Emanated From Binary Blackhole Mergers.</div>
-                            <div class="subheading mb-3">Use of Multiple Seismic Sensors For Source Localization of Earthquake Epicentre Using Graph Signal Processing.</div>							
+                            <div class="subheading subheadingCapitalize mb-3">Adaptive Virtual Inertia-based Frequency Regulation in Wind Power Systems.</div>						
+                            <div class="subheading subheadingCapitalize mb-3">Online Realtime System for Detecting Arc Faults in Low-Voltage Distribution Systems.</div>
+                            <div class="subheading subheadingCapitalize mb-3">Physics-based Modeling of Gravitational Waves Emanated From Binary Blackhole Mergers.</div>
+                            <div class="subheading subheadingCapitalize mb-3">Use of Multiple Seismic Sensors For Source Localization of Earthquake Epicentre Using Graph Signal Processing.</div>							
                             <p>[Details awaited].</p>
                         </div>
                         <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>-->
@@ -134,11 +136,11 @@
             <section class="resume-section" id="publications">
                 <div class="resume-section-content">
                     <h2 class="mb-3 mt-3">Publications</h2>
-					<div class="subheading mb-3">Patents Filed</div>
+					<div class="subheading subheadingCapitalize mb-3">Patents Filed</div>
 					<ol>
 					<li> A. Routray, A. Naha, A. K. Samanta, Amey Pawar, Chandrasekhar Sakpal, “A system for assessment of multiple faults in induction motors”, WO2019167086A1, 2019 <a href="https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2019167086">[link]</a>. </li>
 					</ol>
-					<div class="subheading mb-3">Journal Publications</div>
+					<div class="subheading subheadingCapitalize mb-3">Journal Publications</div>
 					<ol>
 					<li> A. K. Samanta, A. Routray, S.R. Khare, & A. Naha, “Minimum Distance-based Detection of Incipient Induction Motor Faults using Rayleigh Quotient Spectrum of Conditioned Vibration Signal [ACCEPTED]”, in IEEE Transactions on Instrumentation and Measurement <a href="https://ieeexplore.ieee.org/document/9312436">[link]</a>. </li>				
 					<li> A. K. Samanta, A. Routray, S.R. Khare, & A. Naha, “Direct Estimation of Multiple Time-varying Frequencies of Non-stationary Signals”, Signal Processing, vol.169, 2020 <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168419304360">[link]</a>. </li>
@@ -150,7 +152,7 @@
 					<li> A. Naha, A. K. Samanta, A. Routray, and A. K. Deb “Determining Autocorrelation Matrix Size and Sampling Frequency for MUSIC Algorithm”, IEEE Signal Processing Letters, vol.22, no.8, pp.1016-1020, Aug. 2015 <a href="https://ieeexplore.ieee.org/abstract/document/6942180">[link]</a>. </li>
 					<li> A. Mukherjee, A. Routray, and A. K. Samanta, "Method for On-line Detection of Arcing in Low Voltage Distribution Systems", IEEE Transactions on Power Delivery Aug, vol.32, no.3, pp.1244-1252, 2015 <a href="https://ieeexplore.ieee.org/abstract/document/7012066">[link]</a>. </li>
 					</ol>
-					<div class="subheading mb-3">Book Chapters</div>
+					<div class="subheading subheadingCapitalize mb-3">Book Chapters</div>
 					<ol>
 					<li> A. K. Samanta, A. Naha, D. Basu, A. Routray, and A. K. Deb, “Online Condition Monitoring of Traction Motor”, Book chapter in Handbook of Research on Emerging Innovations in Rail Transportation Engineering, IGI Global <a href="https://pdfs.semanticscholar.org/32a5/70fb312a40ae18a5645ce3518ed203e6ca57.pdf">[link]</a>. </li>
 					
@@ -165,7 +167,7 @@
 					                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Indian Institute of Technology Kharagpur</h3>
-                            <div class="subheading mb-3">Pursuing Ph.D. </div>
+                            <div class="subheading subheadingCapitalize mb-3">Pursuing Ph.D. </div>
                             <div>Presently working on estimation of parameters under non-stationary conditions and detection theory with specific application for detecting anomaly of mechanical systems.  </div>
                             <!--<p>GPA: 8.67/10 (Only Coursework)</p>-->
                         </div>
@@ -174,7 +176,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Indian Institute of Technology Kharagpur</h3>
-                            <div class="subheading mb-3">Master of Science (by Research)</div>
+                            <div class="subheading subheadingCapitalize mb-3">Master of Science (by Research)</div>
                             <div>Thesis Title: Designing Real-Time Diagnostics for Squirrel Cage Induction Motors <a href="assets\doc\AnikKumarSamanta_MS_Thesis.pdf">[download PDF]</a>. (a) Setting up 22-kW squirrel cage induction motor fault experimental test bed. (b) Development of low-complexity, high-resolution spectral estimator. (c) Development of a real-time SCIM fault simulator. 
 							</div>
                             <!--<p>GPA: 9.69/10</p>-->
@@ -184,7 +186,7 @@
 					<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Dr. B. C. Roy Engineering College, Durgapur</h3>
-                            <div class="subheading mb-3">Bachelor of Technology</div>
+                            <div class="subheading subheadingCapitalize mb-3">Bachelor of Technology</div>
                             <div>Electronics and Communication Engineering. Thesis Title: An Intelligent Direction Monitoring Wireless System for Moving Objects.</div>
                             <!--<p>GPA: 8.19/10</p>-->
                         </div>
@@ -193,7 +195,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">South Eastern Railway Mixed Higher Secondary School (CISCE)</h3>
-                            <div class="subheading mb-3">Maths, Physics, Chemistry, Biology, English, Bengali</div>
+                            <div class="subheading subheadingCapitalize mb-3">Maths, Physics, Chemistry, Biology, English, Bengali</div>
                             <!--<p>Marks: 78.8%</p>-->
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">March 2006</span></div>
@@ -201,7 +203,7 @@
 					<div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Sacred Heart High School (CISCE)</h3>
-                            <div class="subheading mb-3">Maths, Physics, Chemistry, Biology, English, Bengali, History, Geography</div>
+                            <div class="subheading subheadingCapitalize mb-3">Maths, Physics, Chemistry, Biology, English, Bengali, History, Geography</div>
                             <!--<p>Marks: 80.6%</p>-->
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">March 2004</span></div>
@@ -229,7 +231,7 @@
                         <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
                         <li class="list-inline-item"><i class="fab fa-npm"></i></li>
                     </ul> -->
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <div class="subheading subheadingCapitalize mb-3">Programming Languages & Tools</div>
                      <ul>
 						<li>MATLAB</li>
 						<li>Simulink</li>
@@ -239,13 +241,13 @@
 						<li>Psychopy</li>
 						<li>Latex</li>
 					</ul> 
-					<div class="subheading mb-3">Hardware Platforms</div>
+					<div class="subheading subheadingCapitalize mb-3">Hardware Platforms</div>
                      <ul>
 						<li>Intel-based single board computers</li>
 						<li>Raspberry pi</li>
 						<li>STM Discovery boards</li>
 					</ul>
-					<div class="subheading mb-3">Public Dataset Handled</div>
+					<div class="subheading subheadingCapitalize mb-3">Public Dataset Handled</div>
                      <ul>
 						<li>LIGO data <a href="https://www.gw-openscience.org/about/">[link]</a></li>
 						<li>Case Western Reserve University bearing fault data <a href="https://csegroups.case.edu/bearingdatacenter/pages/welcome-case-western-reserve-university-bearing-data-center-website">[link]</a></li>
@@ -255,17 +257,6 @@
 					</ul>					
             </section>
 
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section interest-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-3 mt-3">Interests</h2>
-                    <p style="text-align:justify">Outside the regular rigor of my Ph.D., I love to swim. Due to the recent lockdown situation, I started cycling. Currently, I ride 30 KMs on an average daily. Apart from these, I am an amaeteur chef, have been trying my hand on biriyani for some time now. I like to take pictures, and birds have been an interesting subject for me for quite some time.</p>
-                    <p class="mb-0"> My indoor activities include reading novels and watching movies. </p>
-                </div>
-			
-			</section>
-			
             <hr class="m-0" />
             <!-- ProfessionResponsibilities-->
             <section class="resume-section" id="ProfResponsibilities">
@@ -289,6 +280,17 @@
 					</ol>
                 </div>			
             </section>
+
+            <!-- Interests-->
+            <section class="resume-section interest-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-3 mt-3">Interests</h2>
+                    <p style="text-align:justify">Outside the regular rigor of my Ph.D., I love to swim. Due to the recent lockdown situation, I started cycling. Currently, I can ride 30 KMs on an average daily. Apart from these, I am an amaeteur chef, have been trying my hand on biriyani for some time now. I like photography, and birds have been an interesting subject for me for quite some time.</p>
+                    <p class="mb-0"> My indoor activities include reading novels and watching movies. </p>
+                </div>
+			</section>
+			
+            <hr class="m-0" />
             <footer>
             <div class="footer bg-primary">Site Maintained By : Anik Kr Samanta</div>
             </footer>
