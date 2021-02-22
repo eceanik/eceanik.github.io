@@ -107,7 +107,7 @@
                             <div class="subheading subheadingCapitalize mb-3">Real-time Simulation of Squirrel Cage Induction Motor Faults</div>
 							<p style="text-align:justify" > Fault modeling is essential for testing condition monitoring system of the induction motors. This helps in generating conditions that are difficult to emulate in experimental setup and hence can be used to test and validate the fault detector under different operating conditions. In this work we develop a real-time fault simulator of the induction motor from existing mathematical models. For developing the simulator, modeling was carried out with coupled circuit modeling (CCM) technique and was developed in Simulink. Various faults that arise in an actual motor under different operating conditions can be incorporated in this model. <span id="RTsimulator" class="readMoretxt"> This modeling technique is based on winding function approach that can be used for any arbitrary winding layout. The parameters of the motor are derived from geometry and the winding arrangement. An embedded platform is developed for implementation of the fault simulator. This platform is loaded with the DOS based real-time kernel known as Simulink Real-time (SLRT). The mathematical model is developed in Simulink and an executable code is generated from it. Once generated, the executable code was run on a developed platform. Faults like broken rotor bar, broken end ring, and eccentricity were modelled apart from a healthy motor condition. The model is fully functional for all the three type of eccentricity faults: the static, the dynamic and the mixed conditions.
 							<img src="assets/img/simulator.jpg" alt="SCIM Fault Simulator" style="width:271px;height:185px;" >								
-							</p></span>
+							</span></p>
                             <button onclick="readMore('RTsimulator')" id="RTsimulatorReadMore" class="readbtnStyle">Read more</button>
                             <button onclick="readLess('RTsimulator')" id="RTsimulatorReadLess" class="readbtnStyle readLessBtn">Read less</button>							
                         </div>
@@ -117,7 +117,11 @@
                         <div class="flex-grow-1">
                             <div class="subheading subheadingCapitalize mb-3">Online Embedded System for Detecting Squirrel Cage Induction Motor Faults</div>
 							<img src="assets/img/embeddedSystem.jpg" alt="Embedded System Progression" style="width:458px;height:217px;">							
-                            <p>[Details awaited].</p>
+                            <p style="text-align:justify" > The photograph above shows the evolution of the embedded hardware has undergone in our lab. We started the development with a single board computer built inhouse. The system is capable of taking analog signals as input and ca display the results in real-time. <span id="embeddedSys" class="readMoretxt"> For developing portable solutions we switched to a Raspberry Pi based system for fault detection. Eventually, we also used an android-based mobile device to capture the motor vibrations for fault detection using the inbuilt accelerometer. Currently, we are working towards developing an IoT-based solutions for monitoring multiple motors simultanaously. The IoT-based framework is given below: 
+							<img src="assets/img/IoT.png" alt="SCIM Fault Detector" style="width:235px;height:182px;" >								
+							</span></p>
+                            <button onclick="readMore('embeddedSys')" id="embeddedSysReadMore" class="readbtnStyle">Read more</button>
+                            <button onclick="readLess('embeddedSys')" id="embeddedSysReadLess" class="readbtnStyle readLessBtn">Read less</button>	
                         </div>
                         <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>-->
                     </div>
