@@ -96,7 +96,7 @@
                             <p style="text-align:justify" > The eigenvalue of a symmetric matrix with known eigenvector can be approximated by using the theory of Rayleigh quotients. the eigenvalues of the autocorrelation matrix corresponding to the signal eigenvectors obtained from the Rayleigh quotients can give vital information about the sinusoidal amplitude present. The mean square error (MSE) between the input sinusoidal frequency and the location of the peak obtained from the respective spectral estimator is evaluated by multiple montecarlo simulations. It is inferred that MUSIC and the proposed spectral estimator have slightly higher accuracy for similar data length when compared to DFT. <span id="rayleigh" class="readMoretxt"> It is found that the performance of the proposed spectral estimator in a noisy environment is quite robust and is equivalent to that of MUSIC and is quite better than DFT. Unlike MUSIC, the Rayleigh-quotient spectrum can estimate the amplitude of constituent frequency components and is also faster than MUSIC, without requiring any information about the model order.                        
 							<img src="assets/img/locationError_SNRdb_window_v2.jpg" alt="MSE_snr" style="width:256px;height:192px;">
 							<img src="assets/img/locationError_xCorrDB_crlb_windowed_v2.jpg" alt="MSE_datalength" style="width:256px;height:192px;">                            
-                            </p>
+                            </span></p>
                             <button onclick="readMore('rayleigh')" id="rayleighReadMore" class="readbtnStyle">Read more</button>
                             <button onclick="readLess('rayleigh')" id="rayleighReadLess" class="readbtnStyle readLessBtn">Read less</button>
                         </div>
@@ -105,8 +105,11 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1">
                             <div class="subheading subheadingCapitalize mb-3">Real-time Simulation of Squirrel Cage Induction Motor Faults</div>
-							<img src="assets/img/simulator.jpg" alt="SCIM Fault Simulator" style="width:271px;height:185px;" >							
-
+							<p style="text-align:justify" > Fault modeling is essential for testing condition monitoring system of the induction motors. This helps in generating conditions that are difficult to emulate in experimental setup and hence can be used to test and validate the fault detector under different operating conditions. In this work we develop a real-time fault simulator of the induction motor from existing mathematical models. For developing the simulator, modeling was carried out with coupled circuit modeling (CCM) technique and was developed in Simulink. Various faults that arise in an actual motor under different operating conditions can be incorporated in this model. <span id="RTsimulator" class="readMoretxt"> This modeling technique is based on winding function approach that can be used for any arbitrary winding layout. The parameters of the motor are derived from geometry and the winding arrangement. An embedded platform is developed for implementation of the fault simulator. This platform is loaded with the DOS based real-time kernel known as Simulink Real-time (SLRT). The mathematical model is developed in Simulink and an executable code is generated from it. Once generated, the executable code was run on a developed platform. Faults like broken rotor bar, broken end ring, and eccentricity were modelled apart from a healthy motor condition. The model is fully functional for all the three type of eccentricity faults: the static, the dynamic and the mixed conditions.
+							<img src="assets/img/simulator.jpg" alt="SCIM Fault Simulator" style="width:271px;height:185px;" >								
+							</p></span>
+                            <button onclick="readMore('RTsimulator')" id="RTsimulatorReadMore" class="readbtnStyle">Read more</button>
+                            <button onclick="readLess('RTsimulator')" id="RTsimulatorReadLess" class="readbtnStyle readLessBtn">Read less</button>							
                         </div>
                         <!-- <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>-->
                     </div>
